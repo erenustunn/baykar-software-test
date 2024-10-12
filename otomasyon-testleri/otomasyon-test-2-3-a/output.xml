@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.13.0 on win32)" generated="2024-10-11T21:20:58.655476" rpa="false" schemaversion="5">
+<suite id="s1" name="E" source="C:\Users\Eren\PycharmProjects\BaykarTestAutomationProject\Task 2.1\e.robot">
+<test id="s1-t1" name="Click All Elements And Verify" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-11T21:20:58.897874" level="INFO">Opening browser 'Chrome' to base url 'https://baykartech.com'.</msg>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-11T21:20:58.897662" elapsed="9.019803"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-11T21:21:07.918284" elapsed="0.084061"/>
+</kw>
+<status status="PASS" start="2024-10-11T21:20:58.896770" elapsed="9.105987"/>
+</test>
+<test id="s1-t2" name="cd" line="12">
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2024-10-11T21:21:08.004437" level="INFO">Length is 3.</msg>
+<msg time="2024-10-11T21:21:08.004609" level="INFO">${total_elements} = 3</msg>
+<var>${total_elements}</var>
+<arg>//a</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2024-10-11T21:21:08.004217" elapsed="0.000443"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2024-10-11T21:21:08.058442" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="4823f5aeec94cda2971c30ec9b72d1d9", element="f.E9412B9602AB5C3D6602A04B9C082D2A.d.1817669EDC80468EE0F7B85B55E57BD0.e.57")&gt;, &lt;selenium.webdriv...</msg>
+<var>${elements}</var>
+<arg>//a</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2024-10-11T21:21:08.007248" elapsed="0.051343"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2024-10-11T21:21:08.059391" level="INFO">Length is 117.</msg>
+<msg time="2024-10-11T21:21:08.059560" level="INFO">${element_count} = 117</msg>
+<var>${element_count}</var>
+<arg>${elements}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2024-10-11T21:21:08.059007" elapsed="0.000598"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click And Verify Element">
+<kw name="Get From List" owner="Collections">
+<msg time="2024-10-11T21:21:08.061738" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="4823f5aeec94cda2971c30ec9b72d1d9", element="f.E9412B9602AB5C3D6602A04B9C082D2A.d.1817669EDC80468EE0F7B85B55E57BD0.e.57")&gt;</msg>
+<var>${element}</var>
+<arg>${elements}</arg>
+<arg>${index}</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<status status="PASS" start="2024-10-11T21:21:08.061175" elapsed="0.000650"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-11T21:21:08.062267" elapsed="0.055704"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-10-11T21:21:08.118162" elapsed="0.034557"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-11T21:21:08.153362" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="4823f5aeec94cda2971c30ec9b72d1d9", element="f.E9412B9602AB5C3D6602A04B9C082D2A.d.1817669EDC80468EE0F7B85B55E57BD0.e.57")&gt;'.</msg>
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-11T21:21:08.153158" elapsed="0.117086"/>
+</kw>
+<arg>3 times</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${element}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-11T21:21:08.152917" elapsed="0.117502"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2024-10-11T21:21:08.277960" level="INFO">${title} = BAYKAR Teknoloji | Türkiye'nin ilk Milli S/İHA'larını geliştiren teknoloji şirketi BAYKAR</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-10-11T21:21:08.270667" elapsed="0.007344"/>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2024-10-11T21:21:08.278341" level="INFO">Length is 89.</msg>
+<arg>${title}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2024-10-11T21:21:08.278188" elapsed="0.000206"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" start="2024-10-11T21:21:08.278500" elapsed="0.140315"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-11T21:21:10.419374" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-11T21:21:08.418975" elapsed="2.000499"/>
+</kw>
+<arg>${elements}</arg>
+<arg>${index}</arg>
+<status status="PASS" start="2024-10-11T21:21:08.060589" elapsed="2.358988"/>
+</kw>
+<arg>${index} &lt; ${element_count}</arg>
+<arg>Click And Verify Element</arg>
+<arg>${elements}</arg>
+<arg>${index}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-10-11T21:21:08.059904" elapsed="2.359739"/>
+</kw>
+<var name="${index}">0</var>
+<status status="PASS" start="2024-10-11T21:21:08.006343" elapsed="2.413349"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2024-10-11T21:21:10.432118" level="INFO">${elements} = []</msg>
+<var>${elements}</var>
+<arg>//a</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2024-10-11T21:21:10.419948" elapsed="0.012209"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2024-10-11T21:21:10.432428" level="INFO">Length is 0.</msg>
+<msg time="2024-10-11T21:21:10.432491" level="INFO">${element_count} = 0</msg>
+<var>${element_count}</var>
+<arg>${elements}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2024-10-11T21:21:10.432301" elapsed="0.000211"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${index} &lt; ${element_count}</arg>
+<arg>Click And Verify Element</arg>
+<arg>${elements}</arg>
+<arg>${index}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-10-11T21:21:10.432618" elapsed="0.000175"/>
+</kw>
+<var name="${index}">1</var>
+<status status="PASS" start="2024-10-11T21:21:10.419847" elapsed="0.012999"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2024-10-11T21:21:10.440762" level="INFO">${elements} = []</msg>
+<var>${elements}</var>
+<arg>//a</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2024-10-11T21:21:10.433031" elapsed="0.007781"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2024-10-11T21:21:10.441115" level="INFO">Length is 0.</msg>
+<msg time="2024-10-11T21:21:10.441182" level="INFO">${element_count} = 0</msg>
+<var>${element_count}</var>
+<arg>${elements}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2024-10-11T21:21:10.440971" elapsed="0.000237"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${index} &lt; ${element_count}</arg>
+<arg>Click And Verify Element</arg>
+<arg>${elements}</arg>
+<arg>${index}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-10-11T21:21:10.441337" elapsed="0.000188"/>
+</kw>
+<var name="${index}">2</var>
+<status status="PASS" start="2024-10-11T21:21:10.432956" elapsed="0.008889"/>
+</iter>
+<var>${index}</var>
+<value>${total_elements}</value>
+<status status="PASS" start="2024-10-11T21:21:08.004933" elapsed="2.436988"/>
+</for>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-11T21:21:10.442266" elapsed="2.349222"/>
+</kw>
+<status status="PASS" start="2024-10-11T21:21:08.003566" elapsed="4.788303"/>
+</test>
+<status status="PASS" start="2024-10-11T21:20:58.656640" elapsed="14.136235"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="E">E</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

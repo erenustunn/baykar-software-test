@@ -1,0 +1,264 @@
+MANUEL TEST SENARYOLARI
+
+Test Senaryosu Adı: Baykar Kariyer Anasayfanın ve Anasayfa içeriklerinin Yüklenmesi
+Test Amacı: Siteye giriş yapıldığında anasayfanın eksiksiz ve hızlı bir şekilde yüklendiğini doğrulamak.
+
+
+Test Adımları:
+1. Web tarayıcısı açılır.
+2. Baykar Kariyer web sitesinin URL'i (https://kariyer.baykartech.com/tr/) tarayıcıya yazılır ve enter tuşuna basılır.
+3. Sayfanın eksiksiz yüklendiği kontrol edilir.
+
+Beklenen Sonuç: Anasayfa herhangi bir hata vermeden ve makul sürede yüklenmelidir. Anasayfadaki tüm içerikler (resimler, metinler, videolar vb.) düzgün ve eksiksiz görünmelidir.
+
+Gerçek Sonuç: Anasayfaya başarıyla girilmiştir, anasayfa ve içerikler eksiksiz şekilde görünmüştür.
+
+----------------------------
+
+Test Senaryosu Adı: Navbar Elementlerinin Kontrolü
+Test Amacı: Anasayfada bulunan navbar elementlerinin çalıştığını doğrulamak.
+
+Test Adımları:
+1. Baykar Kariyer (https://kariyer.baykartech.com/tr/) sitesi açılır.
+2. Sitenin yukarısında bulunan navbar elementlerine (Kariyer, Açık Pozisyonlar, Staj, S.S.S, Giriş vb.) teker teker tıklanır.
+3. İlgili sayfaların açıldığı kontrol edilir.
+
+Beklenen Sonuç: Baykar Kariyer sayfasındaki tüm navbar elementlerine başarıyla tıklanabilmelidir. Doğru sayfa açılmalıdır ve sayfalar sorunsuz bir şekilde açılmalıdır.
+
+Gerçek Sonuç: Navbar elementlerinin hepsine başarıyla tıklanmıştır, tıklanan sayfalar sorunsuz, doğru ve eksiksiz bir şekilde açılmıştır.
+
+----------------------------
+
+Test Senaryosu Adı: Sitede Sağlanan Diller Arası Geçiş ve Dillerin Kontrolü
+Test Amacı: Sitede bulunan diller arasındaki geçişin doğru bir şekilde yapılması ve seçilen dilin doğru bir şekilde gösterilmesi.
+
+Test Adımları:
+1. Baykar Kariyer (https://kariyer.baykartech.com/tr/) sitesi açılır.
+2. Sitenin sağ tarafında, giriş butonunun yanında bulunan butona tıklanır.
+3. İlgili dilin doğru bi şekilde gösterildiği kontrol edilir.
+
+Beklenen Sonuç: Baykar Kariyer sitesinde sağlanan diller arası geçiş başarıyla yapılmalıdır ve doğru dil gösterilmelidir.
+
+Gerçek Sonuç: Diller arası geçiş başarılı olmuştur, seçilen dil doğru gösterilmiştir.
+
+----------------------------
+
+Test Senaryosu Adı: Açık Pozisyonları Listeleme
+Test Amacı: Açık pozisyonlar sayfasındaki pozisyonların doğru bir şekilde yüklendiğini kontrol etmek.
+
+Test Adımları:
+1. Baykar Kariyer (https://kariyer.baykartech.com/tr/) sitesi açılır.
+2. Sitenin sağ tarafında bulunan açık pozisyonlar butonuna ya da sitenin ortasında bulunan mavi renkli açık pozisyonlar butonuna tıklanır.
+3. Pozisyonların listelendiğinden emin olunur.
+4. Pozisyon detaylarına ulaşmak için herhangi bir pozisyona tıklanır.
+
+Beklenen Sonuç: Açık pozisyonlar eksiksiz olarak listelenmeli ve bir pozisyona tıklandığında detay sayfası açılmalıdır.
+
+Gerçek Sonuç: Pozisyonlar başarıyla listelenmiştir ve herhangi bir pozisyona tıklandığında detayları görünmüştür.
+
+
+----------------------------
+
+Test Senaryosu Adı: Açık Pozisyonlara Başvurma
+Test Amacı: Sitedeki açık pozisyonlara başarılı bir şekilde başvurulduğunu test etmek.
+
+Test Adımları:
+1. Baykar Kariyer (https://kariyer.baykartech.com/tr/) sitesi açılır.
+2. Sitenin sağ tarafında bulunan açık pozisyonlar butonuna ya da sitenin ortasında bulunan mavi renkli açık pozisyonlar butonuna tıklanır.
+3. Listelenen iş ilanlarından birine tıklanır.
+4. Gelen sayfadaki başvur butonuna tıklanır.
+5. Baykar Kariyer Platformu'na email ve şifreyi yazarak, 'Ben robot değilim' checkbox'ına tıklayarak giriş yapılır.
+6. Listelenen iş ilanlarına geri dönülür. Herhangi birine tıklanır.
+7. 'Evet,başvur' butonuna tıklanır. Gelen dashboard'taki bilgiler doldurulur.
+8. 'Kaydet' butonuna tıklanır.
+
+Beklenen Sonuç: Sitedeki açık pozisyonlara başarıyla başvurulmalıdır.
+
+Gerçek Sonuç: Pozisyona başarıyla başvurulmuştur.
+
+
+----------------------------
+
+Test Senaryosu Adı: Açık Pozisyonlar Sayfasında Doğru Arama Yapma
+Test Amacı: Açık Pozisyonlar sayfasında arama kutusuna girilen anahtar kelimelere göre doğru sonuçların döndürüldüğünü test etmek.
+
+
+Test Adımları:
+1. Baykar Kariyer (https://kariyer.baykartech.com/tr/) sitesi açılır.
+2. Sitenin sağ tarafında bulunan açık pozisyonlar butonuna ya da sitenin ortasında bulunan mavi renkli açık pozisyonlar butonuna tıklanır.
+3. Listelenen pozisyonların altındaki mavi renkli açık pozisyonlar butonuna tıklanır.
+4. 'Pozisyon Ara' isimli arama kutusunu bulunur.
+5. Arama kutusuna geçerli bir anahtar kelime girilir (örn: yazılım) ve enter tuşuna basılır.
+6. Anahtar kelime ile ilgili pozisyonların geldiği kontrol edilir.
+
+Beklenen Sonuç: Anahtar kelimelere göre ilgili sonuçlar dönmelidir.
+
+Gerçek Sonuç: Aranan anahtar kelime ile ilgili sonuçlar başarıyla dönmüştür.
+
+----------------------------
+
+Test Senaryosu Adı: Açık Pozisyonlarda Yanlış Arama Yapma
+Test Amacı: Açık Pozisyonlar sayfasında arama kutusuna anlamsız veya geçersiz bir anahtar kelime girildiğinde hata mesajının görülmesi.
+
+Test Adımları:
+1. Baykar Kariyer (https://kariyer.baykartech.com/tr/) sitesi açılır.
+2. Sitenin sağ tarafında bulunan açık pozisyonlar butonuna ya da sitenin ortasında bulunan mavi renkli açık pozisyonlar butonuna tıklanır.
+3. Listelenen pozisyonların altındaki mavi renkli açık pozisyonlar butonuna tıklanır.
+4. 'Pozisyon Ara' isimli arama kutusu bulunur.
+5. Arama kutusuna geçersiz bir anahtar kelime girilir (örn: xcv) ve enter tuşuna basılır.
+6. Hata mesajının gelip gelmediği kontrol edilir.
+
+Beklenen Sonuç: Hatalı aramalarda bilgilendirme mesajları gösterilmelidir.
+
+Gerçek Sonuç: 'Açık Pozisyon Bulunamadı' mesajı görülmüştür.
+
+----------------------------
+
+Test Senaryosu Adı: Açık Pozisyonlar Sayfasında Birim Filtreleme Yapma
+Test Amacı: Seçilen filtrenin arama sonuçlarını doğru şekilde daraltıp daraltmadığını kontrol etmek.
+
+Test Adımları:
+1. Baykar Kariyer (https://kariyer.baykartech.com/tr/) sitesi açılır.
+2. Sitenin sağ tarafında bulunan açık pozisyonlar butonuna ya da sitenin ortasında bulunan mavi renkli açık pozisyonlar butonuna tıklanır.
+3. Listelenen pozisyonların altındaki mavi renkli açık pozisyonlar butonuna tıklanır.
+4. Sayfanın sol tarafında bulunan birim filtrelerinden biri veya birkaçı seçilir.
+5. İlgili birim filtresine göre arama sonuçlarının listelendiği görülür.
+
+
+Beklenen Sonuç: Sonuçlar sadece seçilen filtre kriterlerine uyan pozisyonları göstermelidir.
+
+Gerçek Sonuç: Sadece filtrelenen birimler gösterilmiştir.
+
+----------------------------
+
+Test Senaryosu Adı: Sitede Bulunan Swiper Buton Kontrolü
+Test Amacı: Sitede bulunan swiper butonların doğru bir şekilde çalışıp çalışmadığının kontrol etmek.
+
+Test Adımları:
+1. Baykar Kariyer (https://kariyer.baykartech.com/tr/) sitesi açılır.
+2. Sitede aşağı doğru inilir. Section 2 ve 3'teki swiper butonlarına tıklanır.
+3. Butona her basıldığında fotoğrafların yanlara doğru kaydığı kontrol edilir.
+
+Beklenen Sonuç: Swiper butona tıklandığında fotoğrafların yana doğru kaydığı görülmelidir.
+
+Gerçek Sonuç: Butonlara her tıklandığında fotoğrafların sağa ve sola kaydığı görülmüştür.
+
+----------------------------
+
+Test Senaryosu Adı: İletişim Formu Gönderme
+Test Amacı: İletişim formunun başarılı şekilde iletildiğini görmek.
+
+Test Adımları:
+1. Baykar Kariyer (https://kariyer.baykartech.com/tr/) sitesi açılır.
+2. Sitenin en aşağısına inilir.
+3. Sağ tarafta bulunan 'İletişim Formu' butonuna tıklanır.
+4. Sayfada istenilen bilgiler doldurulur. (İsim Soyisim, Telefon Numaranız, E-posta, Konu, Mesajınız vb.)
+5. 'Ben Robot Değilim' checkbox'ına tıklanır.
+6. 'Gönder' butonuna tıklanır.
+
+Beklenen Sonuç: İstenilen bilgiler eksiksiz doldurulduğunda iletişim formu gönderilirken hata ile karşılaşılmamalı.
+
+Gerçek Sonuç: İletişim formu başarıyla gönderilmiştir.
+
+----------------------------
+Test Senaryosu Adı: Kullanıcı Girişi Doğrulama
+Test Amacı: Kullanıcının sisteme başarıyla giriş yapabilmesini test etmek.
+
+Test Adımları:
+1. Baykar Kariyer (kariyer.baykartech.com) sitesi açılır.
+2. Sağ taraftaki 'GİRİŞ' butonuna tıklanır.
+3. Gelen sayfadaki email alanı doğru bir şekilde doldurulur.
+4. Gelen sayfadaki şifre alanı doğru bir şekilde doldurulur.
+5. 'Ben Robot Değilim' checkbox'ı işaretlenir.
+6. Giriş butonuna tıklanır.
+
+Beklenen Sonuç: Kullanıcı başarılı bir şekilde sisteme giriş yapmalıdır. Sağ üst köşede kullanıcı adı görünmelidir. Kullanıcı kişisel bilgiler sayfasına yönlendirilmelidir.
+
+Gerçek Sonuç: Sisteme başarıyla girilmiştir. Kullanıcı adı doğru şekilde görünmüştür, kişisel bilgiler sayfasına yönlendirme başarılı olmalıdır.
+
+----------------------------
+
+Test Senaryosu Adı: Responsive Tasarım Testi
+Test Amacı: Baykar Kariyer web sitesinin farklı ekran boyutlarında düzgün görünüp görünmediğini test etmek.
+
+Test Adımları:
+1. Tarayıcıda Baykar Kariyer (kariyer.baykartech.com) sitesi açılır.
+2. Ekran farklı boyutlara getirilir.
+3. İçeriklerin düzgün göründüğü kontrol edilir.
+
+Beklenen Sonuç: Web sitesi farklı ekran boyutlarında düzgün görünmelidir.
+
+Gerçek Sonuç: Web sitesi ve sitenin içerikleri farklı ekran boyutlarında düzgün görünmüştür.
+
+----------------------------
+
+Test Senaryosu Adı: Sitenin Güvenlik Testi
+Test Amacı: Baykar Kariyer web sitesinin güvenli bir bağlantı (https) kullanıp kullanmadığını test etmek.
+
+Test Adımları:
+1. Baykar Kariyer (kariyer.baykartech.com) sitesi açılır.
+2. Sitenin yukarısında bulunan URL alanına tıklanır.
+3. URL'de https bağlantısının kullanılıp kullanılmadığı kontrol edilir.
+
+Beklenen Sonuç: Web sitesi güvenli bir bağlantı kullanmalıdır.
+
+Gerçek Sonuç: Web sitesinde URL alanına tıklandığında https bağlantısı kullandığı görülmüştür.
+
+----------------------------
+
+Test Senaryosu Adı: Sitenin Performans Testi
+Test Amacı: Baykar Kariyer web sitesinin sayfalarının yüklenme hızını test etmek.
+
+Test Adımları:
+1. Baykar Kariyer (kariyer.baykartech.com) sitesi açılır.
+2. Sitede farklı sayfalar arasında geçiş yapılmalıdır.
+3. Geçilen sayfanın yüklenme süresi kontrol edilir.
+
+Beklenen Sonuç: Web sitesinin sayfalarının yüklenme süresi makul bir süre (örneğin 4 saniye) olmalıdır.
+
+Gerçek Sonuç: Sayfalar makul sürede yüklenmiştir.
+
+----------------------------
+
+Test Senaryosu Adı: Stress Testi(Yük Testi)
+Test Amacı: Baykar Kariyer web sitesine aynı anda fazla sayıda kullanıcı girdiğinde sitenin performansını kontrol etmek.
+
+Test Adımları:
+1. Verilen tasktaki 3. soru için hazırladığım yük_performans_testi.py dosyası çalıştırılır.
+2. Yüksek sayıda kullanıcı girilir, sitenin performansı kontrol edilir.
+
+Beklenen Sonuç: Web sitesine aynı anda fazla kullanıcı girdiğinde performans düşüşü yaşanmamalıdır.
+
+Gerçek Sonuç: Fazla kullanıcı ile test edildiğinde performans düşüşü yaşanmamıştır.
+
+----------------------------
+
+Test Senaryosu Adı: Tarayıcı Uyumluluğu Testi
+Test Amacı: Baykar Kariyer web sitesinin farklı tarayıcılarda düzgün çalışıp çalışmadığını kontrol etmek.
+
+Test Adımları:
+1. Google Chrome tarayıcısında Baykar Kariyer (kariyer.baykartech.com) sitesi açılır.
+2. Sitenin Google Chrome'da doğru bir şekilde çalışıp çalışmadığı kontrol edilir.
+3. Microsoft Edge tarayıcısında Baykar Kariyer (kariyer.baykartech.com) sitesi açılır.
+4. Sitenin Microsoft Edge'de doğru bir şekilde çalışıp çalışmadığı kontrol edilir.
+5. Firefox tarayıcısında Baykar Kariyer (kariyer.baykartech.com) sitesi açılır.
+6. Sitenin Firefox'ta doğru bir şekilde çalışıp çalışmadığı kontrol edilir.
+
+Beklenen Sonuç: Web sitesi farklı tarayıcılarda düzgün bir şekilde çalışmalıdır.
+
+Gerçek Sonuç: Web sitesi çeşitli tarayıcılarda doğru bir şekilde çalışmıştır.
+
+----------------------------
+
+Test Senaryosu Adı: Mobil Cihaz Uyumluluğu Testi
+Test Amacı: Baykar Kariyer web sitesinin Android ve IOS cihazlarda düzgün çalışıp çalışmadığını kontrol etmek.
+
+Test Adımları:
+1. Android cihazda Baykar Kariyer (kariyer.baykartech.com) sitesi açılır.
+2. Sitenin Android cihazda doğru bir şekilde çalışıp çalışmadığı kontrol edilir.
+3. IOS cihazda Baykar Kariyer (kariyer.baykartech.com) sitesi açılır.
+4. Sitenin IOS cihazda doğru bir şekilde çalışıp çalışmadığı kontrol edilir.
+
+Beklenen Sonuç: Web sitesi farklı cihazlarda (Android, IOS) düzgün bir şekilde çalışmalıdır.
+
+Gerçek Sonuç: Web sitesi farklı cihazlarda denenmiştir ve düzgün bir şekilde çalışmıştır.

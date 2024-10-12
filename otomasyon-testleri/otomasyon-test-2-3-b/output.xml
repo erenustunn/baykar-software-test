@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.13.0 on win32)" generated="2024-10-11T21:23:25.259930" rpa="false" schemaversion="5">
+<suite id="s1" name="ASDFG" source="C:\Users\Eren\PycharmProjects\BaykarTestAutomationProject\Task 2.2\ASDFG.robot">
+<kw name="Open Browser To Baykartech" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-11T21:23:25.476448" level="INFO">Opening browser 'Chrome' to base url 'https://www.baykartech.com'.</msg>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-11T21:23:25.476242" elapsed="11.242762"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-11T21:23:36.719230" elapsed="0.075538"/>
+</kw>
+<status status="PASS" start="2024-10-11T21:23:25.475683" elapsed="11.319389"/>
+</kw>
+<test id="s1-t1" name="Verify Language Switching" line="11">
+<for flavor="IN">
+<iter>
+<kw name="Change Language">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-11T21:23:36.802433" level="INFO">Clicking element 'xpath=//a[@href='/en/']'.</msg>
+<arg>xpath=//a[@href='${lang_href}']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-11T21:23:36.799236" elapsed="3.256500"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-11T21:23:42.056806" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-11T21:23:40.056012" elapsed="2.000997"/>
+</kw>
+<arg>${lang_href}</arg>
+<status status="PASS" start="2024-10-11T21:23:36.796873" elapsed="5.260285"/>
+</kw>
+<kw name="Validate Page Content">
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2024-10-11T21:23:42.065850" level="INFO">${current_url} = https://www.baykartech.com/en/</msg>
+<var>${current_url}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2024-10-11T21:23:42.057828" elapsed="0.008062"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${current_url}</arg>
+<arg>${lang_code}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2024-10-11T21:23:42.066032" elapsed="0.000174"/>
+</kw>
+<arg>${lang_code}</arg>
+<status status="PASS" start="2024-10-11T21:23:42.057384" elapsed="0.008894"/>
+</kw>
+<var name="${lang_code}">en</var>
+<var name="${lang_href}">/en/</var>
+<status status="PASS" start="2024-10-11T21:23:36.796518" elapsed="5.269803"/>
+</iter>
+<iter>
+<kw name="Change Language">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-11T21:23:42.066962" level="INFO">Clicking element 'xpath=//a[@href='/tr/']'.</msg>
+<arg>xpath=//a[@href='${lang_href}']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-11T21:23:42.066772" elapsed="2.065150"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-11T21:23:46.132446" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-11T21:23:44.132091" elapsed="2.000464"/>
+</kw>
+<arg>${lang_href}</arg>
+<status status="PASS" start="2024-10-11T21:23:42.066556" elapsed="4.066108"/>
+</kw>
+<kw name="Validate Page Content">
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2024-10-11T21:23:46.137841" level="INFO">${current_url} = https://www.baykartech.com/tr/</msg>
+<var>${current_url}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2024-10-11T21:23:46.133311" elapsed="0.004597"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${current_url}</arg>
+<arg>${lang_code}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2024-10-11T21:23:46.138135" elapsed="0.000386"/>
+</kw>
+<arg>${lang_code}</arg>
+<status status="PASS" start="2024-10-11T21:23:46.132850" elapsed="0.005841"/>
+</kw>
+<var name="${lang_code}">tr</var>
+<var name="${lang_href}">/tr/</var>
+<status status="PASS" start="2024-10-11T21:23:42.066455" elapsed="4.072308"/>
+</iter>
+<var>${lang_code}</var>
+<var>${lang_href}</var>
+<value>@{SUPPORTED_LANGUAGES}</value>
+<status status="PASS" start="2024-10-11T21:23:36.796220" elapsed="9.342654"/>
+</for>
+<status status="PASS" start="2024-10-11T21:23:36.795323" elapsed="9.343920"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-11T21:23:46.140094" elapsed="2.268398"/>
+</kw>
+<status status="PASS" start="2024-10-11T21:23:25.261085" elapsed="23.147665"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="ASDFG">ASDFG</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
